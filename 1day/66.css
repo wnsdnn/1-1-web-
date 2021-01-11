@@ -1,0 +1,45 @@
+div{
+    margin: 30px;
+    width: 500px;
+}
+#left{
+    font-family: "궁서";
+    text-align: left;
+    font-weight: bold;
+    text-align: left;
+}
+#right{
+    font-family: "돋움";
+    text-align: right;
+}
+#center{
+    font-family: "맑은 고딕";
+    text-align: center;
+}
+#justify{
+    font-size: 42px;
+    text-align: justify;
+}
+
+/* #hi li{
+    color: blue;
+} 
+#hi > ul> li{
+    color: red;
+}
+tr, td{
+    border: 1px solid black;
+} */
+
+/* h1{
+    color: red;
+}
+#hi{
+    color: aquamarine;
+}
+.ab{
+    color: blue;
+}
+div{
+    color: purple;
+} */

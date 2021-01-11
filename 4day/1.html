@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <style type="text/css">
+        .test li{
+            float: left;
+            margin-right: 5px;
+            list-style: none;
+        }
+        .test li::after{
+            padding-left: 5px;
+            content: "|";
+        }
+        .test li:nth-child(3)/*last-child*/::after{
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <ul class="test">
+            <li><a href="">home</a></li>
+            <li><a href="">login</a></li>
+            <li><a href="">sitemap</a></li>
+        </ul>
+    </div>
+</body>
+</html>

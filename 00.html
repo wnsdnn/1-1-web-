@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .chart{
+            left: 50px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            position: relative;
+            width: 175px;
+            height: 350px;
+        }
+        .chart *, .chart::after{
+            box-sizing: border-box;
+        }
+        .chart li{
+            position: absolute;
+            right: 100%;
+            top: 0;
+            width: inherit;
+            height: inherit;
+            border: 45px solid;
+            border-right: none;
+            border-top-left-radius: 175px;
+            border-bottom-left-radius: 175px;
+        }
+        .chart::after{
+            position: absolute;
+            content: " ";
+            width: inherit;
+            height: inherit;
+            border: 45px solid rgba(211, 211, 211, .3);
+            border-left: none;
+            border-top-right-radius: 175px;
+            border-bottom-right-radius: 175px;
+        }
+        .chart li{
+            transform-origin: 100% 50% ;
+        }
+        .chart li:nth-child(1){
+            z-index: 4;
+            border-color: green;
+            animation: Ani_l1 1s linear 1 forwards;
+        }
+        .chart li:nth-child(2){
+            z-index: 3;
+            border-color: red;
+            animation: Ani_l2 1s linear 1 forwards;
+        }
+        .chart li:nth-child(3){
+            z-index: 2;
+            border-color: blue;
+            animation: Ani_l3 1s linear 1 forwards;
+        }
+        .chart li:nth-child(4){
+            z-index: 1;
+            border-color: orange;
+            animation: Ani_l4 1s linear 1 forwards;
+        }
+        @keyframes Ani_l1{
+            from{transform:rotate(0deg);}
+            to{transform: rotate(70deg);}
+        }
+        @keyframes Ani_l2{
+            from{transform:rotate(0deg);}
+            to{transform: rotate(120deg);}
+        }
+        @keyframes Ani_l3{
+            from{transform:rotate(0deg);}
+            to{transform: rotate(140deg);}
+        }
+        @keyframes Ani_l4{
+            from{transform:rotate(0deg);}
+            to{transform: rotate(180deg);}
+        }
+    </style>
+</head>
+<body>
+    <UL class="chart">
+        <LI></LI>
+        <LI></LI>
+        <LI></LI>
+        <LI></LI>
+    </UL>
+</body>
+</html>
